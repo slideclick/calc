@@ -9,3 +9,7 @@ javac -encoding "UTF-8"  -cp ".;calc.jar" *.java
 3.	但是如果那个代码是package com.github.calc;里面的，你无法在源码目录运行它，你得去com的父目录去：
 java com.github.calc.Calc
 4.	第3步有可能需要有-cp参数。如果源码依赖org包，你或者在com有个兄弟叫org或者提供-cp里面有org
+--------------------
+有的比较老的jar包，没有main定义
+你就解压它，然后看里面的目录叫什么名字，比如peter的叫silk
+\Downloads>java -cp classes.jar silk.Scheme
