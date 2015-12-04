@@ -1,0 +1,11 @@
+怎样编译和运行java程序
+
+1.	通常它都有个jar文件，那么解压它，里面会MANIFEST.MF说谁是主的，直接
+java -jar calc.jar
+2.	你如果要去源码编译出来，需要提供jar包，你为了手工你可以把calc复制到源码当前目录去，然后编译*,例如
+javac -encoding "UTF-8"  -cp ".;calc.jar" *.java
+后者你这样编译
+\calc\src\main\java>javac -encoding "UTF-8"  com\github\calc\*.java
+3.	但是如果那个代码是package com.github.calc;里面的，你无法在源码目录运行它，你得去com的父目录去：
+java com.github.calc.Calc
+4.	第3步有可能需要有-cp参数。如果源码依赖org包，你或者在com有个兄弟叫org或者提供-cp里面有org

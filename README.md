@@ -1,8 +1,10 @@
 Calc
 
-\Downloads\calc-master\calc-master>java -jar calc.jar
-calc\src\main\java\com\github\calc>javac -encoding "UTF-8"  -cp ".;calc.jar" *.java
-calc\src\main\java>java com.github.calc.Calc
+1 \Downloads\calc-master\calc-master>java -jar calc.jar
+2 calc\src\main\java\com\github\calc>javac -encoding "UTF-8"  -cp ".;calc.jar" *.java
+3 \calc\src\main\java>javac -encoding "UTF-8"  com\github\calc\*.java
+4  calc\src\main\java>java com.github.calc.Calc
+
 ====
 
 [![Maven Central](https://img.shields.io/maven-central/v/com.github.javadev/calc.svg)](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.github.javadev%22%20AND%20a%3A%22calc%22)
